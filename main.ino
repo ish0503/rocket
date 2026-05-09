@@ -156,11 +156,7 @@ void GPSCheck(){
   Serial.println("===========\n");
 }
 
-uint32_t start_time = 0; // 병렬 처리를 위한 시간
-
 void setup () {
-  start_time = millis();// 병렬 처리를 위한 시간 설정
-
   Serial.begin(9600);
   LEDSetting();
   AltitudeSensorCheck();
