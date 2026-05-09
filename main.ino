@@ -20,13 +20,13 @@ void setup () {
 
 void loop() {
   delay (100);
-  Serial.printin （"============="） ；
+  Serial.printin（"============="） ；
   Serial.print(F("온도 =")) ;
   Serial.print(bmp. readTemperature());
-  Serial. println(" *C"); //센서로 온도 측정해서 출력
+  Serial.println(" *C"); //센서로 온도 측정해서 출력
   Serial.print(F("기압=")) ;
-  Serial. print(bmp. readPressure());
-  Serial println(" Pa"); //센서로 기압 측정해서 출력
+  Serial.print(bmp. readPressure());
+  Serial.println(" Pa"); //센서로 기압 측정해서 출력
   Serial.print(F("고도 =")) ;
   Serial.print (bmp. readAltitude(999.2)); // 센서로 고도 측정해서 출력
   Serial.println(" m") ;
