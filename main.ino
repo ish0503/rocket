@@ -13,7 +13,7 @@ Adafruit_BMP280 bmp(CSB, SDA, SDO, SCL);
 void setup () {
   Serial. begin(9600);
   if (!bmp.begin()) { // 센서가 인식되지 않는 경우 
-    Serial.println(F("센서가 인식되지 않습니다. 연결 상태를 확인해주세요. ")) ;
+    Serial.println(F("고도센서가 인식되지 않습니다. 연결 상태를 확인해주세요. ")) ;
     while (1);
  }
 }
